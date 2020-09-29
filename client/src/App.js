@@ -1,17 +1,12 @@
 import React from 'react';
 import './App.css';
+import Page from './components/Page.js' 
 
 function App() {
   return (
     <div className="App">
-      <div class="wrap">
-        <div class="inner">
-          <span>JOSE RIOS XYZ</span>
-        </div>
-      </div>
-
+      <Page/>
     </div>
-    
   );
 }
 
