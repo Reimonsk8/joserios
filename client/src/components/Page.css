@@ -16,11 +16,10 @@
     color: white;
     background: none;
     background: linear-gradient(15deg,black, #200122, #6f0000);
-    
     -webkit-animation: slidefromleft 2s forwards;
     -webkit-animation-delay: 2s;
     animation: slidefromleft 2s forwards;
-    animation-delay: 1s;
+    animation-delay: 0s;
     
   }
   @-webkit-keyframes slidefromleft {
@@ -42,9 +41,9 @@
   */
   background: linear-gradient(82.5deg,purple, orange, yellow, white);
   color: black;
-  -webkit-animation: slidefromright 1s forwards;
-  -webkit-animation-delay: 1s;
-  animation: slidefromright 1s forwards;
+  -webkit-animation: slidefromright 2s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slidefromright 2s forwards;
   animation-delay: 0s;
 }
 @-webkit-keyframes slidefromright {
@@ -92,9 +91,9 @@ Span p:hover{
   /*text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;*/
   /*background-color: rgba(37, 37, 37, 0.1);*/
   color: white;
-  -webkit-animation: Title-spin 2s forwards;
-  -webkit-animation-delay: 2s;
-  animation: Title-spin 2s forwards;
+  -webkit-animation: Title-spin 1s forwards;
+  -webkit-animation-delay: 1s;
+  animation: Title-spin 1s forwards;
   animation-delay: 1s;
 }
 @keyframes Title-spin {
