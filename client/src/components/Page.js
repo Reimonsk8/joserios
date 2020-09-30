@@ -3,13 +3,16 @@ import './Page.css'
 
 class Page extends React.Component{
   state = {
-    showContent: "Home"
+    showContent: "Start"
   }
   nextPage = (value) => {
     this.setState({showContent: value});
   }
   componentDidMount() {
     console.log("mounted ", this.state.showContent)
+    if(this.state.showContent == "Start"){
+      this.setState({showContent: "Home"});
+    }
   }
   render(){
     const content = this.state.showContent;
@@ -55,9 +58,9 @@ class Page extends React.Component{
 
               </div>
             </div>
-
-
         </div>
+    }else{
+      showComponent = <div></div>
     }
 
     return(
