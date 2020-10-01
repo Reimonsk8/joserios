@@ -23,7 +23,6 @@ img{
 @keyframes slidefromleft {
   0% { left:-100vw; opacity: 0;}
   100% { left: 0px; opacity: 1;}
-
 }
 .Menu {
   z-index: 1;
@@ -51,14 +50,14 @@ img{
   padding: 2rem;
 }
 .Page Span p{
-  font: calc((8.5vh) + (11.5vw)) DrukCondensedSuper;
+  font: calc((8.5vh) + (11.5vw)) Druk Condensed;
 
 }
 Span p{
   z-index: 3;
   color: rgba(218,255,171,1);
   margin: 0px;
-  font: calc((8.5vh) + (6.5vw)) DrukCondensedSuper;
+  font: calc((8.5vh) + (6.5vw)) Druk Condensed;
   /*text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;*/
 }
 Span{
@@ -113,7 +112,6 @@ a:hover{
 }
 
 .Footer p{
-  
   display: inline-block;
   font-size: 1.8vh;
   color: rgba(218,255,171,1);

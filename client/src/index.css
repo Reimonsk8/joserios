@@ -1,20 +1,18 @@
+
 @font-face {
-  font-family: 'DrukCondensedSuper';
-  src: local('DrukCondensedSuper.woff'), url(fonts/Druk_Collection/Druk_Condensed/DrukCondensedSuper.woff) format('woff');
+  font-family: 'Druk Condensed';
+  src: url('/fonts/DrukCondensed-Super.woff2') format('woff2'),
+      url('/fonts/DrukCondensed-Super.woff') format('woff');
+  font-weight: 900;
   font-style: normal;
-  font-weight: 100;
+  font-display: swap;
 }
+
 @font-face {
   font-family: 'Ogg-Roman';
-  src: local('Ogg-Roman.otf'), url(./fonts/Ogg-Roman.otf) format('opentype');
+  src: url(/fonts/Ogg-Roman.otf) format('opentype');
   font-style: normal;
   font-weight: 100;
-}
-@font-face{
-    font-family: 'SuperLovelyI';
-    src: local('SuperLovelyI.eot'), url('./fonts/SuperLovelyI/SuperLovelyI.eot') format('embedded-opentype');
-    font-style: normal;
-    font-weight: 100;
 } 
 
 body {

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Druk Condensed';
+    src: url('DrukCondensed-Super.woff2') format('woff2'),
+        url('DrukCondensed-Super.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

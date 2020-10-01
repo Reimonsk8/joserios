@@ -4,7 +4,6 @@ import Photo1 from '../photos/HOME.jpg'
 import Photo2 from '../photos/FOTO 002.jpg'
 import Photo3 from '../photos/IMG_1788.jpg'
 
-
 class Page extends React.Component{
   state = {
     showContent: "Home"
