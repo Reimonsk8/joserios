@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'DrukCondensedSuper';
+  src: local('DrukCondensedSuper.woff'), url(fonts/Druk_Collection/Druk_Condensed/DrukCondensedSuper.woff) format('woff');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Ogg-Roman';
+  src: local('Ogg-Roman.otf'), url(./fonts/Ogg-Roman.otf) format('opentype');
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face{
+    font-family: 'SuperLovelyI';
+    src: local('SuperLovelyI.eot'), url('./fonts/SuperLovelyI/SuperLovelyI.eot') format('embedded-opentype');
+    font-style: normal;
+    font-weight: 100;
+} 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
