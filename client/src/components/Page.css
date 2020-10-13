@@ -1,18 +1,11 @@
-#Background{
-  z-index: -2;
-  position: fixed;
-  background: linear-gradient(0deg, lightgray);
-  width: 100vw;
-  height: 100vh;
-}
-img{
+
+/* img{
   z-index: -1;
   position: fixed;
   height: 100%;
-}
+} */
 .Page {
   z-index: 1;
-  position: fixed;
   width: 100vw;
   height: 100vh;
   -webkit-animation: slidefromleft 1.5s forwards;
