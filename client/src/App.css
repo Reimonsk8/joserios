@@ -3,6 +3,8 @@
   width: 100vw;
   height: 100vh;
   background: linear-gradient(0deg, lightgray);
+  background-image: url("https://thumbs.gfycat.com/DefenselessFrighteningButterfly-size_restricted.gif");
+  background-size: cover;
 }
 
 *{

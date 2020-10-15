@@ -1,9 +1,9 @@
 import React from 'react'
 import './Spinner.css'
-import Page from './Page.js'
-import Photo1 from '../photos/HOME.jpg'
-import Photo2 from '../photos/FOTO 002.jpg'
-import Photo3 from '../photos/IMG_1788.jpg'
+import PageMenu from './PageMenu.js'
+import PageContact from './PageContact.js'
+import PageHome from './PageHome.js'
+import {BrowserRouter as Router, Route, Switch, Link,Redirect} from 'react-router-dom'
 
 class Spinner extends React.Component{
   state = {
@@ -12,9 +12,7 @@ class Spinner extends React.Component{
 
   componentDidMount() {
     console.log("mounted ", this.state.showContent)
-    var item = document.getElementById('SpinnerInner'); 
   }
-
 
   nextPage = (value) => {
     var item = document.getElementById('SpinnerInner');
@@ -23,90 +21,29 @@ class Spinner extends React.Component{
       item.style.animation = "end 1s linear";
       this.setState({showContent: value});
     }.bind(this),1000);
-    
-    
-    
+    //console.log("route = " ,this.props.match.url)
   }
 
   render(){
+    // let routerWay =
+    // <Router>
+    //   <Switch>
+    //     <Route exact path="/" render={props => <PageHome sendtoPage={(value) => this.nextPage(value)}/>}></Route>
+    //     <Route exact path="/Home" render={props => <PageHome sendtoPage={(value) => this.nextPage(value)}/>}></Route>
+    //     <Route exact path="/Menu" render={props => <PageMenu sendtoPage={(value) => this.nextPage(value)}/>}> </Route>  
+    //     <Route exact path="/Contact" render={props => <PageContact sendtoPage={(value) => this.nextPage(value)}/>}></Route>
+    //   </Switch>
+    // </Router>
+
+    //this is the conditional render//
     const content = this.state.showContent;
-    let showComponent = <p> if failed </p>;//this is the conditional render
+    let showComponent = <p> if failed </p>;
     if(content === "Home") {
-      showComponent = 
-      <div className="Page">
-        <div className="Wrap">
-          <img alt="home" src={Photo1} />
-          <div className="Inner">
-            <span onClick={ () => this.nextPage("Menu")}>
-              <p>JOSÉ RÍOS</p>
-            </span>
-            <div className="Footer">
-              <p>©JOSE RIOS 2020. ALL RIGHTS RESERVED</p>
-            </div>
-        </div>
-        </div>
-        <div className="midline"></div>
-     </div>
-
+      showComponent = <PageHome sendtoPage={(value) => this.nextPage(value)}/>
     }else if(content === "Menu") {
-      showComponent = 
-        <div className= "Menu">
-          <div className="topline"></div>
-          <div className="Wrap">
-          <img alt="menu" src={Photo2} />
-            <div className="Inner">
-              <span onClick={ () => this.nextPage("Home")}>
-                  <p>INICIO</p>
-                </span>
-              <span className="Right" onClick={ () => this.nextPage("Contact")} >
-                <p>FOTOGRAFÍA </p>
-              </span>
-              <span onClick={ () => this.nextPage("Contact")} >
-                <p>DISEÑO GRÁFICO </p>
-              </span>
-
-              <span className="Right" onClick={ () => this.nextPage("Contact")} >
-                <p>CONTACTO</p>
-              </span>
-
-            </div>
-          </div>
-          <div className="botline"></div>
-        </div>
+      showComponent = <PageMenu sendtoPage={(value) => this.nextPage(value)}/>
     }else if (content === "Contact"){
-      showComponent = 
-      <div className="Page">
-        <div className="topline"></div>
-        <div className="Wrap">
-        <img alt="contact" src={Photo3} />    
-            <div className="Inner">
-              <div className="Contact">
-                <span onClick={ () => this.nextPage("Home")}>
-                  <p>INICIO</p>
-                </span>
-                <div>
-                  Diseñador gráfico - Fotógrafo independiente
-                </div>
-                <div>
-                  centrado en la comunicación y la identidad visual.
-                </div>
-                <div className="Footer">
-                  <p>©JOSE RIOS 2020. ALL RIGHTS RESERVED</p>
-                </div>
-                <div>
-                  <a href="mailto:Joserios.xyz@gmail.com?subject = Feedback&body = Services">Joserios.xyz@gmail.com</a> 
-                </div>
-                <div>
-                  < a href="https://www.instagram.com/usernamepepe/">Instagram - Usernamepepe</a>
-                </div>
-                <div>
-                  < a href="https://www.behance.net/usernamepepe">Behance - Portafolio</a>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div className="botline"></div>
-      </div>
+      showComponent = <PageContact sendtoPage={(value) => this.nextPage(value)}/>
     }
 
     return(
