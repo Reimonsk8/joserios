@@ -37,8 +37,21 @@
   font-weight: lighter;
 }
 #description{
+  text-shadow: #000 0px 0px 2px;
+  -webkit-font-smoothing: antialiased;
   text-align: left;
   margin-left: 5vw;
+  animation: fade-in-from-bottom 2s forwards;
+  animation-delay: 0s;
+  -webkit-animation: fade-in-from-bottom 2s forwards;
+  -webkit-animation-delay: 0s;
+  -moz-animation: fade-in-from-bottom 2s forwards;
+  -moz-animation-delay: 0s;
+  -o-animation: fade-in-from-bottom 2s forwards;
+  -o-animationn-delay: 0s;
+  -ms-animation: fade-in-from-bottom 2s forwards;
+  -ms--animation-delay: 0s;
+
 }
 .PageContact img{
   z-index: -1;

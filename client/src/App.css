@@ -23,8 +23,11 @@
   height: 2px;
   width: 90vw;
 }
-.Exit p{
-  /* border: 1px solid red; */
+
+.Exit a{
+  background-color: black;
+}
+.Exit{
   padding: 0px;
   margin: 0px;
   opacity: 0.5;
@@ -33,10 +36,29 @@
   position: fixed;
   right: 5vw;
   top: 5vh;
+  /* border: 1px solid red;  */
 }
-.Exit p:hover{
+.Exit:hover{
   color: rgb(172, 29, 185);
 }
+.Exit p{
+  animation: fade-in 2s forwards;
+  animation-delay: 0s;
+  -webkit-animation: fade-in 2s forwards;
+  -webkit-animation-delay: 0s;
+  -moz-animation: fade-in 2s forwards;
+  -moz-animation-delay: 0s;
+  -o-animation: fade-in 2s forwards;
+  -o-animationn-delay: 0s;
+  -ms-animation: fade-in 2s forwards;
+  -ms--animation-delay: 0s;
+}
+
+@keyframes fade-in{
+  from{opacity: 0;}
+  top{opacity: 0.7;}
+}
+
 
   
 @-moz-keyframes start {

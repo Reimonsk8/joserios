@@ -6,7 +6,7 @@ import Photo3 from '../photos/IMG_1788.jpg'
 function PageContact({sendtoPage}){
   return(
     <div className="PageContact">
-      <a className="Exit" onClick={ () => sendtoPage("Home")}><p>⤬‎‎‎‎‎</p></a>
+      <span className="Exit" onClick={ () => sendtoPage("Home")}><p>⤬‎‎‎‎‎</p></span>
       <div className="topline"></div>
       <img alt="contact" src={Photo3} />   
       <div className="Wrap"> 
