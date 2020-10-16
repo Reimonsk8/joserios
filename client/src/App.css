@@ -2,11 +2,82 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, lightgray);
-  background-image: url("https://thumbs.gfycat.com/DefenselessFrighteningButterfly-size_restricted.gif");
-  background-size: cover;
+  background-color: black;
 }
-
 *{
   border: 0px dotted blue;
+}
+.topline{
+  position: fixed;
+  top: 5vh;
+  left: 5vw;
+  background-color: rgba(228,255,201,1);  
+  height: 2px;
+  width: 90vw;
+}
+.botline{
+  position: fixed;
+  bottom: 5vh;
+  left: 5vw;
+  background-color: rgba(228,255,201,1);  
+  height: 2px;
+  width: 90vw;
+}
+.Exit p{
+  /* border: 1px solid red; */
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.5;
+  font-size: calc((5.5vh) + (6.5vw));
+  color: rgba(218,255,171,1);
+  position: fixed;
+  right: 5vw;
+  top: 5vh;
+}
+.Exit p:hover{
+  color: rgb(172, 29, 185);
+}
+
+  
+@-moz-keyframes start {
+  from { transform: perspective(1000px) rotateY(0); }
+  to { transform: perspective(1000px) rotateY(90deg); }
+}
+@-webkit-keyframes start {
+  from { transform: perspective(1000px) rotateY(0); }
+  to { transform: perspective(1000px) rotateY(90deg); }
+}
+@-o-keyframes start {
+  from { transform: perspective(1000px) rotateY(0); }
+  to { transform: perspective(1000px) rotateY(90deg); }
+}
+@-ms-keyframes start {
+  from { transform: perspective(1000px) rotateY(0); }
+  to { transform: perspective(1000px) rotateY(90deg);}
+}
+@keyframes start {
+  from { transform: perspective(1000px) rotateY(0); }
+  to { transform: perspective(1000px) rotateY(90deg);}
+}
+
+
+@-moz-keyframes end {
+  from { transform: perspective(1000px) rotateY(-90deg);  }
+  to { transform: perspective(1000px) rotateY(0); }
+}
+@-webkit-keyframes end {
+  from { transform: perspective(1000px) rotateY(-90deg); }
+  to { transform: perspective(1000px) rotateY(0);}
+}
+@-o-keyframes end {
+  from { transform: perspective(1000px) rotateY(-90deg); }
+  to { transform: perspective(1000px) rotateY(0); }
+}
+@-ms-keyframes end {
+  from { transform: perspective(1000px) rotateY(-90deg); }
+  to { transform: perspective(1000px) rotateY(0); }
+}
+@keyframes end {
+  from { transform: perspective(1000px) rotateY(-90deg); }
+  to { transform: perspective(1000px) rotateY(0); }
 }

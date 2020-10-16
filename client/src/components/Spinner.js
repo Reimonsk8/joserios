@@ -15,7 +15,7 @@ class Spinner extends React.Component{
   }
 
   nextPage = (value) => {
-    var item = document.getElementById('SpinnerInner');
+    var item = document.getElementById('SpinnerWrap');
     item.style.animation = "start 1s linear";
     setTimeout(function(){
       item.style.animation = "end 1s linear";

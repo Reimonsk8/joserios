@@ -1,0 +1,45 @@
+.PageMenu {
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+.PageMenu Span p{
+  font-size: calc((10.5vh) + (12.5vw));
+  margin: 0px;
+  opacity: 0.4;
+  margin-bottom: -3vh;
+}
+/* @media screen and (min-width: 200px) {
+  .PageMenu Span p{
+  font-size: 150px;
+  }
+} */
+
+.PageMenu a{
+  text-decoration: none;
+  color: rgba(218,255,171,1);
+}
+
+Span p:hover{
+  opacity: 0.75;
+  /*background-color: rgba(37, 37, 37, 0.1);*/
+  /*
+  color: none;
+  text-shadow: #000 0px 0px 15px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-animation: selected 1s forwards;
+  -webkit-animation-delay: 1s;
+  animation: selected 1s forwards;
+  animation-delay: 0s;
+  */
+}
+
+.PageMenu Span{
+  position: relative;
+  text-align: center;
+  -webkit-animation:  fade-in-from-bottom 2s forwards;
+  -webkit-animation-delay: 0s;
+  animation:  fade-in-from-bottom 2s forwards;
+  animation-delay: 0s;
+}

@@ -1,0 +1,52 @@
+.PageContact{
+  text-align: center;
+  z-index: 3;
+  font: 3.3vh Ogg-Roman;
+  color: rgba(218,255,171,1);
+}
+.PageContact .Inner{
+  margin-top: 10vh;
+  -webkit-animation: fade-in-from-bottom 2s forwards;
+  -webkit-animation-delay: 0s;
+  animation: fade-in-from-bottom 2s forwards;
+  animation-delay: 0s;
+}
+.Contact{
+  text-align: left;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+  margin-left: 5vw;
+  animation: fade-in-from-bottom 2s forwards;
+  animation-delay: 0s;
+  -webkit-animation: fade-in-from-bottom 2s forwards;
+  -webkit-animation-delay: 0s;
+  -moz-animation: fade-in-from-bottom 2s forwards;
+  -moz-animation-delay: 0s;
+  -o-animation: fade-in-from-bottom 2s forwards;
+  -o-animationn-delay: 0s;
+  -ms-animation: fade-in-from-bottom 2s forwards;
+  -ms--animation-delay: 0s;
+}
+.PageContact a{  
+  text-decoration: none;
+  text-align: right;
+  color: rgba(218,255,171,1);
+}
+.PageContact a:hover{
+  color: rgb(172, 29, 185);
+  font-weight: lighter;
+}
+#description{
+  text-align: left;
+  margin-left: 5vw;
+}
+.PageContact img{
+  z-index: -1;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+}
+.PageContact .Footer{
+  position: fixed;
+  bottom: 1vh;
+}

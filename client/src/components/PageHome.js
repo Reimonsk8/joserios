@@ -10,18 +10,17 @@ const PageHome = ({sendtoPage}) => {
         <img alt="home" src={Photo1} />
         <div className="Inner">
           <span onClick={ () => sendtoPage("Menu")}>
-            <p>JOSÉ RÍOS</p>
+            <p>JOSÉ RIOS</p>
           </span>
           <div className="Footer">
-            <p>©JOSE RIOS 2020. ALL RIGHTS RESERVED</p>
+            <div className="move">
+              <p>©JOSÉ RIOS 2020. ALL RIGHTS RESERVED</p>
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="midline"></div>
-      
    </div>
   )
 }
-
+// / <div className="midline"></div>
 export default PageHome;
